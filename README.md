@@ -75,7 +75,7 @@ We can use these Lewis numbers directly in the transport equation of species by 
 
 In many theoretical and numerical models, unity Lewis numbers are assumed for all species ($\text{Le}_i = 1$ for all $i$). Chem1D automatically sets the Lewis number of a species to 1 if it can not be found in the `lewis.dat` file. Therefore, to enforce unity Lewis coefficients for all species, remove the old lewis.dat file and create a new empty file called `lewis.dat`. Determine the laminar burning velocity $s_L$ and $T_b$ and compare it with the other two diffusion models. Also, take a look at the enthalpy profile. What do you notice?
 
-## 2 Non-premixed counterflow flames
+## Exercise 2: Non-premixed counterflow flames
 
 Compute a non-premixed counterflow flame with the default settings in the directory `exercise2`. Take a look at the species and temperature profiles and try to understand/explain them. Also plot the species and temperature profiles as function of the mixture fraction (`MixFrac`).
 
@@ -95,7 +95,7 @@ Now you will study the effect of preheating. What happens with flame temperature
 
 If the temperature of the reactants is high enough, the mixture will auto-ignite. This is an unsteady process, which needs an initial solution and a time integration method. The initial solution can be created by solving a steady problem with frozen chemistry, i.e. $\omega_i = 0$. You can achieve this by setting `[MODEL_CHEMISTRY]` to `FROZEN` and run Chem1D. Then set the chemistry model back to detailed and run a time-dependent simulation with this frozen-chemistry solution as initial point. Try this for a methane-air case with an air temperature of 1400 K. The time evolution of some variables (including the maximum temperature) is recorded in a text file called `fort.67`. This file can be imported in Matlab for visuualization. 
 
-## 3 Lean premixed stretched flames
+## Exercise 3: Lean premixed stretched flames
 
 Flame stretch has an important effect on the burning velocity of premixed flames. To investigate this, you will compute some stretched premixed flames. Enter the `exercise3` directory and compute a lean methane-air flmae with an equivalence ratio of $\phi = 0.6$. Record the mass burning rate $m^0$ given at the end of the log file. Now apply a constant stretch rate $K$ by setting the option `[STRAINANDCURVATURE_STRAIN] to 50 1/s. What happens to the mass burning rate? 
 
