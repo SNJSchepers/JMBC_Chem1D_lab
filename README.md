@@ -95,7 +95,7 @@ Now you will study the effect of preheating. What happens with flame temperature
 
 If the temperature of the reactants is high enough, the mixture will auto-ignite. This is an unsteady process, which needs an initial solution and a time integration method. The initial solution can be created by solving a steady problem with frozen chemistry, i.e. $\omega_i = 0$. You can achieve this by setting `[MODEL_CHEMISTRY]` to `FROZEN` and run Chem1D. Then set the chemistry model back to detailed and run a time-dependent simulation with this frozen-chemistry solution as initial point. Try this for a methane-air case with an air temperature of 1400 K. The time evolution of some variables (including the maximum temperature) is recorded in a text file called `fort.67`. This file can be imported in Matlab for visuualization. 
 
-## Lean premixed stretched flames
+## 3 Lean premixed stretched flames
 
 Flame stretch has an important effect on the burning velocity of premixed flames. To investigate this, you will compute some stretched premixed flames. Enter the `exercise3` directory and compute a lean methane-air flmae with an equivalence ratio of $\phi = 0.6$. Record the mass burning rate $m^0$ given at the end of the log file. Now apply a constant stretch rate $K$ by setting the option `[STRAINANDCURVATURE_STRAIN] to 50 1/s. What happens to the mass burning rate? 
 
