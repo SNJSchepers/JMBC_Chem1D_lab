@@ -1,0 +1,18 @@
+[ADDITIONAL_USERCOMMENT]
+Test case 2: Flame 1 from Lim et al., Combust. Flame 121:262-274 (2000)
+
+[STRAINANDCURVATURE_STRAIN]
+162.0
+
+[GASMIXTURE_FUELCOMPOSITION]            => Unit : MOLE fractions
+CH4     1.000
+[ENDOF_FUELCOMPOSITION]
+
+[BOUNDARY_INLETTEMPERATURE]             => fuel and oxidizer temperature
+300.0   300.0
+
+[MODEL_CHEMISTRY]                       => Options: DETAILED, FROZEN
+DETAILED
+
+[MODEL_SIMULATIONTYPE]                  => Options: STATIONARY, TIMEDEPENDENT
+STATIONARY

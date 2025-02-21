@@ -1,0 +1,12 @@
+[ADDITIONAL_USERCOMMENT]
+Test case 3: Premixed lean methane-air flame at standard conditions
+
+[BOUNDARY_EQUIVALENCERATIO]             => left and right equivalence ratio
+0.600   0.000
+
+[STRAINANDCURVATURE_STRAIN]             => Unit : 1/s
+0.0
+
+[GASMIXTURE_FUELCOMPOSITION]            => Unit : MOLE fractions
+CH4     1.000
+[ENDOF_FUELCOMPOSITION]

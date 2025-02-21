@@ -1,0 +1,27 @@
+[ADDITIONAL_USERCOMMENT]
+Test case 1: Premixed stoichiometric methane-air flame at standard conditions
+
+[SOLVER_DIFFERENTIALSCHEME]             => Options: UPWIND, CENTRAL, EXPONENTIAL
+UPWIND
+!EXPONENTIAL
+
+[BOUNDARY_EQUIVALENCERATIO]             => left and right equivalence ratio
+1.000   0.000
+
+[BOUNDARY_INLETPRESSURE]                => pressure
+1.013250E5
+[BOUNDARY_INLETTEMPERATURE]             => fuel and oxidizer temperature
+300.0   300.0
+
+[GASMIXTURE_OXIDIZERCOMPOSITION]        => Unit : MOLE fractions
+O2      0.210
+N2      0.790
+[ENDOF_OXIDIZERCOMPOSITION]
+
+[POSTPROCESSING_OUTPUTFILES]            => Supply a filename to the default ouput files
+MASS     yiend.dat     ON
+LEWIS    lewis.dat     OFF
+[ENDOF_OUTPUTFILES]
+
+[MODEL_TRANSPORT]                       => Options: LEWIS, MIXTUREAVERAGED
+MIXTUREAVERAGED
