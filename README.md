@@ -48,7 +48,7 @@ python plotexample.py
 ```
 
 ## Exercise 1: Premixed methane-air flames
-Compute a stoichiometric premixed flame using the initial unchanged settings. Take a look at the temperature and species profiles and try to understand/explain them. Is the computational domain large enough? Are you using enough grid points?
+Compute a stoichiometric premixed flame using the initial unchanged settings. Take a look at the temperature and species profiles and try to understand/explain them. Is the computational domain large enough? Are you using enough grid points?
 
 ### 1.1 Stoichiometry and emissions
 
