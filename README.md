@@ -65,7 +65,7 @@ For this exercise, you will investigate the dependence of burning velocity on te
 
 Do the same for the inlet temperature $T_u$. Increase it with several steps from 300 to 500 K by changing the value under `[BOUNDARY_INLETTEMPERATURE]`. Note that there are two temperature entries: the first corresponds to the fuel, and the second to the oxidizer stream. However, since this is a premixed case, both should have the same values. Plot log($s_L$) as a function of $1/T_b$ and compute the activation energy $E_a$ from the slope of this curve. 
 
-Another way to change the flame temperature $T_b$ is by varying the amount of nitrogen dilution. If you decrease the amount of N$_2$ in the oxidizer, the flame temperature will increase and vice versa. Try this and compare with the variations in $T_u$. Do you find the same $s_L$ for the same $T_b$? What about the mass burning rate $m = \rho_u s_L$?
+Another way to change the flame temperature $T_b$ is by varying the amount of nitrogen dilution. If you decrease the amount of $\text{N}_2$ in the oxidizer, the flame temperature will increase and vice versa. Try this and compare with the variations in $T_u$. Do you find the same $s_L$ for the same $T_b$? What about the mass burning rate $m = \rho_u s_L$?
 
 ### 1.3 Simplified transport: Constant Lewis numbers
 
